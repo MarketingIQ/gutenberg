@@ -27,7 +27,7 @@ jobs:
                 totalParts: [4]
 
         steps:
-            - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+            - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
 
             - name: Setup Node.js and install dependencies
               uses: ./.github/setup-node
@@ -71,7 +71,7 @@ jobs:
                 totalParts: [2]
 
         steps:
-            - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+            - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
 
             - name: Setup Node.js and install dependencies
               uses: ./.github/setup-node
@@ -115,7 +115,7 @@ jobs:
         steps:
             # Checkout defaults to using the branch which triggered the event, which
             # isn't necessarily `trunk` (e.g. in the case of a merge).
-            - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+            - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
               with:
                   ref: trunk
 
